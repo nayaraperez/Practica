@@ -1,0 +1,104 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+      font-family: Arial, sans-serif;
+}
+
+
+body {
+   background-color: #f3f8ff;
+   color: #0256FF;
+}
+
+/* Barra de navegación */
+.navbar {
+   background-color: #ffffff;
+   padding: 15px 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* Logo */
+.logo a {
+   color: #000000;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+
+}
+
+.nav-links {
+   display: flex;
+   gap: 20px;
+   font-weight: bold;
+   
+}
+
+.nav-links a {
+   color: #0256FF;
+   text-decoration: none;
+   font-size: 16px;
+   padding: 8px 12px;
+   border-radius: 5px;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+.Salir{
+  margin: auto;
+  padding: 10px 20px;
+  color: blanchedalmond;
+  border-radius: 25px;
+  border: none;
+  display: block;
+  margin-bottom: 10px;
+  background-color: #177BF6;
+  font-size: 12px;
+}
+
+.logo img{
+    width: 200px;
+    height: 80px;
+}
+
+.Sol{
+   margin: auto;
+   display: block;
+   padding: 10px 15px;
+   font-size: 15px;
+   border-radius: 50%;
+   border: none;
+   background-color: #656565;
+   color: #F5AC42;
+}
+
+
+.Contenedor{
+padding: 40px 0px;
+border-radius: 15px;
+
+}
+
+.barra_dos{
+   background-color: #ffffff;
+   padding: 15px 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nombres_Nf{
+    display: flex;
+    justify-content: center;
+    gap:10px
+}
+.caja1{
+   display: flex;
+   width: 300px;
+   height: 200px;
+   border: solid 1px #aaaaaa;
+   overflow: hidden;
+   color: #000000;
+   padding: 10px 40px ;
+}
