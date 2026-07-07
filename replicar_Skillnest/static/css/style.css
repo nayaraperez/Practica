@@ -28,33 +28,52 @@ body {
    align-items: center;
 
 }
-
 .nav-links {
-   display: flex;
-   gap: 20px;
-   font-weight: bold;
-   
+      justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    align-items:center; 
+
 }
 
 .nav-links a {
-   color: #0256FF;
-   text-decoration: none;
-   font-size: 16px;
-   padding: 8px 12px;
-   border-radius: 5px;
+    color: #0256FF;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 0px; 
+    font-weight: bold;
+    position: relative; 
+}
+
+
+
+
+
+/* Crea la línea invisible debajo de cada enlace */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;          
+    bottom: 0;       
+    left: 0;
+    background-color: #61CE70; 
+   transform: scaleX(0); 
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1); 
 }
 
 /*-------------------------------------------------------------------------------------------------*/
-.Salir{
-  margin: auto;
-  padding: 10px 20px;
-  color: blanchedalmond;
-  border-radius: 25px;
-  border: none;
-  display: block;
-  margin-bottom: 10px;
-  background-color: #177BF6;
-  font-size: 12px;
+.Salir {
+   padding: 10px 20px;
+   color: blanchedalmond;
+   border-radius: 25px;
+   border: none;
+   background-color: #177BF6;
+   font-size: 12px;
+   cursor: pointer;
 }
 
 .logo img{
@@ -62,9 +81,7 @@ body {
     height: 80px;
 }
 
-.Sol{
-   margin: auto;
-   display: block;
+.Sol {
    padding: 10px 15px;
    font-size: 15px;
    border-radius: 50%;
@@ -72,7 +89,28 @@ body {
    background-color: #656565;
    color: #F5AC42;
 }
-
+.NF{
+   justify-content: center;
+   margin: auto;
+   display: block;
+   padding: 32px 30px;
+   font-size: 20px;
+   border-radius: 50%;
+   border: none;
+   background-color: #177BF6;
+   color: #ffffff;
+   display: flex;
+   justify-content: center;
+}
+.nombres_Nf h3{
+   color: #000000;
+}
+.nombres_Nf {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 10px;
+}
 
 .Contenedor{
 padding: 40px 0px;
@@ -101,4 +139,69 @@ border-radius: 15px;
    overflow: hidden;
    color: #000000;
    padding: 10px 40px ;
+}
+
+.Contenedor-Bloques {
+    display: flex;
+    padding: 20px 40px; 
+    align-items: flex-start; 
+}
+
+
+.lado-izquierdo {
+    display: flex;
+    flex-direction: column;  
+    width: 300px;       
+}
+
+.caja_grande {
+    flex: 1;            /* Se expande dinámicamente ocupando el resto de la pantalla */
+    background-color: #ffffff; /* Opcional: fondo blanco para que resalte en tu fondo azul claro */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.canpana_roja{
+   color: #CC3566;
+  padding: 10px 12px;
+  border: solid 1px #CC3566;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;
+}
+.caja_ingreso {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 250px;          /* Ancho fijo para que entren unas 2 o 3 por fila */
+    min-height: 180px;     /* En lugar de un alto rígido, un alto mínimo */
+    padding: 15px;
+    border: solid 1px #e0e0e0; /* Un borde gris más suave acorde a tu diseño */
+    gap: 10px;
+}
+
+.contenedor_tarjetas {
+    display: flex;
+    flex-wrap: wrap;      
+    justify-content: flex-start; 
+    gap: 20px;             /* Espacio uniforme entre tarjetas */
+    margin-top: 20px;      /* Un margen pequeño y prudente con respecto al menú "Publicaciones" */
+}
+.caja_grande h1{
+ padding: 20px;
+
+}
+.navbar_23{
+
+   display: flex;
+   padding: 20px;
+   align-items: center;
+   gap: 30px;
+}
+.navbar_23 a{
+   text-decoration: none;
+   color: #aaaaaa;
+
+   
 }
